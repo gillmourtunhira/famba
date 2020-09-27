@@ -26,7 +26,6 @@ body {
     // height: 50%;
 
     &__app {
-        height: 500px;
         max-width: 100%;
         background-color: #ffc61a;
         border-radius: 5px;
@@ -59,6 +58,10 @@ body {
                     text-transform: uppercase;
                 }
             }
+        }
+
+        &--form {
+            width: 100%;
         }
     }
 
@@ -100,4 +103,40 @@ body {
             font-size: 1.2em;
         }
     }
+}
+
+.form__fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+
+    div {
+        width: 45%;
+
+        input {
+            width: 100%;
+            padding: 12px 18px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            background-clip: padding-box;
+            font-size: 16px;
+            color: #535252;
+
+            &#id_copy {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+input[type=file] {
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: lowercase;
+    border: 0;
+    color: #1f1f1f;
+    background: #ffc61a;
+    display: inline-block;
 }
