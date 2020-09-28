@@ -33,11 +33,11 @@ body {
 
         &--options {
             display: flex;
-            gap: 2px;
+            gap: 5px;
             justify-content: space-between;
             align-items: normal;
             margin-bottom: 1em;
-            flex-direction: column;
+            flex-wrap: wrap;
 
             div {
                 padding: 20px;
@@ -150,12 +150,5 @@ input[type=file] {
         margin: 0 auto;
         margin-top: 20px;
         max-width: 740px;
-
-        &__app {
-            &--options {
-                display: flex;
-                flex-direction: row;
-            }
-        }
     }
 }
