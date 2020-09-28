@@ -143,6 +143,23 @@ input[type=file] {
     display: inline-block;
 }
 
+.button__submit {
+    button {
+        width: 100%;
+        padding: 1em;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #fff;
+        background-color: #000;
+        font-size: 1em;
+        letter-spacing: 1.2px;
+        cursor: pointer;
+    }
+}
+
 @media (min-width: 740px) and (orientation: landscape) {
 
     .wrapper {
@@ -158,5 +175,10 @@ input[type=file] {
         div {
             width: 45%;
         }
+    }
+
+    .button__submit {
+        width: 50%;
+        margin: 0 auto;
     }
 }
