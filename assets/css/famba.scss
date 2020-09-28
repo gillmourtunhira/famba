@@ -114,7 +114,7 @@ body {
     justify-content: space-between;
 
     div {
-        width: 45%;
+        width: 100%;
 
         input {
             width: 100%;
@@ -150,5 +150,13 @@ input[type=file] {
         margin: 0 auto;
         margin-top: 20px;
         max-width: 740px;
+    }
+
+    .form__fields {
+        display: flex;
+
+        div {
+            width: 45%;
+        }
     }
 }
